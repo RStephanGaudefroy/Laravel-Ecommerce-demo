@@ -1,0 +1,436 @@
+/**
+ * CSS Général 
+ */
+    body {
+        background-image:url('/image/CPC6128essai.jpg');
+        background-attachment: fixed;
+        background-size: contain;
+        background-color: #706C6D;/*#8D8C87	;/*		#9B9B95;#9E9E96*/
+        background-repeat:no-repeat; 
+        background-position: right;
+        width: 100%;
+    }
+
+    .footer {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 1rem;
+        margin-top: 1em;
+        background-color: #000;
+        text-align: center;
+        color: #FFF;
+    }
+
+    #index,
+    #cartview,
+    #profil,
+    #login,
+    #register,
+    #payment,
+    #formContact,
+    #gestionArticle,
+    #gestionCreation,
+    #gestionUpdate,
+    #gestionCreation,
+    #forgotPassword {
+        margin-top: 5em;
+        margin-bottom: 3em;
+    }
+
+    #formUpdate,
+    #formCreate {
+        margin-top: 1em;
+    }
+
+    #payment .stripe-button-el {
+        padding: 0;
+        border: none;
+    }
+    
+    #payment .stripe-button-el span{
+        background: #404040;
+        border: none;
+        color:#337ab7;
+    }
+
+    #index .btn,
+    #cartview .bouton,
+    #payment .bouton,
+    #formCreate .bouton,
+    #gestionArticle .bouton,
+    #gestionUpdate .bouton,
+    #login .btn,
+    #register .btn,
+    #forgotPassword .btn,
+    #authEmail .btn,
+    #authReset .btn {
+        float: left;
+        margin-right:1em;
+        padding:0.6em 1em;
+        border-radius:15px 0 15px 0;
+        font:bold 15px Arial;
+        background: #404040;
+        border:none;
+        color:#337ab7;
+    }
+
+    #gestionArticle .bouton {
+        margin-bottom: 1em;
+    }
+
+    #index .btn {
+        float: right;
+    }
+
+/* A000 - Gestion erreur */
+.help-block {
+    color: red;
+}
+
+/* A0 - Header */
+    #header {
+        position: fixed;
+        width:100%;
+        right: 0;
+        top: 0%;
+        z-index: 1000;
+        background: #000;
+        margin-bottom: 0;
+    }
+
+    #header,
+    #header a,
+    #header .dropdown-menu,
+    #cartview .dropdown-menu a,
+    #header ul .fa-home {
+        color: #FFF;
+    }
+
+    #header ul .fa-home {
+        margin-top: -7px;
+    }
+
+    #header div #header-title {
+        margin-left: 3em;
+        width: 185px;
+        font-size: 18px;
+        margin-top: 0.8em;
+    }
+
+    #header .open > .dropdown-toggle,
+    #header .dropdown-menu > li > a:hover,
+    #header .dropdown-menu > li > a:focus,
+    #header .navbar-right > li > a:hover,
+    #header .dropdown-toggle:hover,
+    #cartview .open > .dropdown-toggle,
+    #cartview .dropdown-menu > li > a:hover,
+    #cartview .dropdown-menu > li > a:focus,
+    #cartview .dropdown-toggle:hover {
+        background: #333333;
+        color: #337ab7;
+    }
+
+    #header .navbar-left > li > a > i:hover {
+        color: #337ab7;    
+    }
+/* A-000 LOGIN, REGISTER, FORGOT PASSWORD */
+    #login .panel-heading,
+    #register .panel-heading,
+    #forgotPassword .panel-heading,
+    #authEmail .panel-heading,
+    #authReset .panel-heading {
+        background-color: #000;
+        color : #fff;
+        border: 0.5px solid #3d3d29;    
+    }
+
+    #login .panel-body,
+    #register .panel-body,
+    #forgotPassword .panel-body,
+    #authEmail .panel-body,
+    #authReset .panel-body {
+        background-color: #bfbfbf;
+    }
+
+/* A - Index */
+    #index .thumbnail {
+        max-height:480px;
+        height:435px;
+        border: 0.5px solid #3d3d29;
+        border-radius: 8px;
+        background-color: #bfbfbf;
+    }
+
+    #index .thumbnail img {
+        height: 150px;
+        max-height: 150px;
+    }
+
+    #index .thumbnail .productName {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #index .caption {
+        max-height: 280px;
+        height:235px;
+    }
+
+    #index .thumbnail .price {
+        font-size: 22px;
+        font-weight:bold;
+        float: left;
+        padding-left: 0.5em;
+    }
+
+    #index .btn,
+    #cartview .bouton,
+    #payment .bouton,
+    #formContact .btn {
+        float: right;
+        margin-right:1em;
+        padding:0.6em 1em;
+        border-radius:15px 0 15px 0;
+        font:bold 15px Arial;
+        background: #404040;
+        border:none;
+        color:#337ab7;
+    }
+
+/* B - CartView */
+    #cartview .bold {
+        font-weight:bold;  
+    }
+
+    #cartview ul .list-group-item {
+        background-color: #bfbfbf;    
+    }
+
+    #cartview .group price .price{
+        font-size: 16px;
+    }
+
+    #cartview .group-price {
+        background-color: #8a8a5c;
+    }
+
+    #cartview #buttonAction {
+        float: right;
+    }
+
+    #cartview #buttonAction button {
+        background: #000;
+        color: #FFF;
+    }
+
+    #cartview .cartview-btn {
+        float: right;
+        margin-right: -12px;
+        margin-top: -7px;
+    }
+
+    #cartview .dropdown-menu {
+        margin-left: -7em;
+    }
+
+/* C - Profil */
+    #profil .panel {
+        background-color: rgba(230,230,230,0);
+        border: 1.5px solid #bfbfbf;
+    }
+
+    #profil .panel-heading,
+    #profil .list-group li,
+    #profil .panel-footer,
+    #profil .panel-title {
+        background: #bfbfbf;
+        font-size: 14px;
+    }
+
+    #profil .panel-footer,
+    #profil .panel-title {
+        font-weight:bold;     
+    }
+
+
+    #profil .maList {
+        border: 5px solid ;
+        border-color: rgba(230,230,230,0);
+    }
+
+/* D - page contact */
+    #formContact #messageContact,
+    #formContact #mailContact,
+    #formContact #dateJour {
+        background-color: rgba(191, 191, 191, 0.4);
+        color: #000;
+        font-weight: bold;
+    }
+
+    #formContact .btn {
+        float: left;
+    }
+
+    #formContact textarea::placeholder { /* Firefox 19+ */
+    color: #000;
+    font-weight: bold;
+    }
+
+    #formContact #dateJour {
+        padding: 5px 20px 5px 20px;
+    }
+
+/* E - Gestion des articles */
+    table {
+        width: 100%;
+    }
+
+    table, td, th { 
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+        
+    }
+
+    table tbody tr td .fa-times {
+        color: red;
+    }
+
+    table tbody tr td .fa-pencil {
+        color: #000099;
+    }
+    
+    th { 
+        border-bottom-width: 2px;
+    }
+
+    tr:nth-child(even) { 
+        background-color: #bfbfbf;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #8c8c8c;
+    }
+
+    td {
+        padding: 5px 10px 5px 10px;
+    }
+
+/**
+ * F - Formulaire create et update 
+ */
+    #formUpdate input, 
+    #formUpdate textarea {
+        color: #000;
+    }
+  
+ 
+/**
+ * Gestion de la responsive
+ */
+@media screen and (min-width: 200px) and (max-width: 430px) {
+    /* A - Header */
+    #header .navbar-nav {
+        margin: 0 0;
+    }
+
+    /* B - CartView */
+    #cartview {
+        font-size: 11px;    
+    }
+
+    #cartview .list-group-item {
+        margin-left: -35px;
+    }
+
+    #cartview .cartview-btn {
+        margin-right: -18px;
+        margin-top: -10px;
+    }
+
+    /* C - Gestion des articles */
+    
+}
+
+@media screen and (min-width: 430px) and (max-width: 767px) {
+    /* Header */
+    #header .navbar-nav {
+        margin: 0 0;
+    }
+    
+    #header ul .fa-home {
+        margin-top: -3px;
+    }
+    
+    /* Index */
+    #index .thumbnail {
+        height:370px;
+    }
+
+    #index .caption {
+        /*max-height: 280px;*/
+        height:150px;
+    }
+
+    #cartview .list-group-item {
+        margin-left: -35px;
+    }
+
+    /* C - Gestion des articles */
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 995px) {
+    /* Index */
+    #index .caption {
+        /*max-height: 280px;*/
+        height:280px;
+    }
+
+    #index .thumbnail {
+        /*max-height:470px;*/
+        height:480px;
+    }
+
+    /* C - Gestion des articles */
+       
+}
+
+@media screen and (min-width: 995px) and (max-width: 1200px) {
+       
+}
+
+/**
+ * Responsive du tableau de la vue gestion article
+ * Traitement à part car responsive commence à <= à 768px 
+ */
+@media (max-width: 48em) {
+   table, tbody { display: block; }
+   
+   tr {
+      display: table;
+      width: 100%;
+   }
+   
+   th {
+      font-size: 0;
+      border: none;
+      visibility: hidden;
+   }
+   
+   td, th { 
+       display: 
+       table-row; 
+   }
+   
+   td:before {
+      /*content: attr(data-headers);*/
+      display: table-cell;
+      width: 30%;
+      border-right:  1px solid black; 
+      text-align: left;
+      padding-left: 10px;     
+   }
+}
