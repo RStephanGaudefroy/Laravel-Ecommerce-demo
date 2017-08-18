@@ -119,7 +119,7 @@ class ControlController extends Controller
         // Action : Ajoute une extension de type Random au debut du nom de l'image 
         $url = $data['url'];
         $title = $data['image'];
-            
+                        
         $extension = pathinfo($url, PATHINFO_EXTENSION);
         if ($extension) {
             $filename = str_random(4). '-' . $title . '.' . $extension;
@@ -134,6 +134,7 @@ class ControlController extends Controller
             $responseError = false; 
             return $responseError;
         } else {
+            unlink('image/'.$product->image); 
             $file = file_get_contents($url);
             file_put_contents('image/'.$filename, $file);
         }
