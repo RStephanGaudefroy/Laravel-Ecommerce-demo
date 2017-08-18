@@ -14,11 +14,21 @@ use Stripe\stripe;
 
 class ProductController extends Controller
 {
+    /**
+     * fonction getIndex
+     * Retourne la vue magasin
+     */
     public function getIndex() {
         $products = Product::all();
         return view('shop.index', ['products' => $products]);    
     }
 
+    /**
+     * fonction getAddCart
+     * Ajout d'un article dans le panier
+     * @param Request
+     * @param id
+     */
     public function getAddCart(Request $request, $id) {
         $product = Product::find($id);
         /* Récupération du panier dans la session */
@@ -32,6 +42,10 @@ class ProductController extends Controller
         return redirect()->route('product.index');
     }
 
+    /**
+     * fonction getCart
+     * retourne le panier de l'utilisateur
+     */ 
     public function getCart() {
         if (!Session::has('cart')) {
             Session::flash('info', "Malheureusement votre panier est vide");
@@ -43,6 +57,11 @@ class ProductController extends Controller
         }
     }
 
+    /**
+     * fonction getReduceByOne
+     * Réduction de la quantité d'un article dans le panier
+     * @param id : ID de l'article à décrémenter
+     */
     public function getReduceByOne($id) {
         $oldCart = Session::has('cart') ? Session::get('cart') : null;
         $cart = new Cart($oldCart);
@@ -56,6 +75,11 @@ class ProductController extends Controller
         return redirect()->route('product.cartview');  
     }
 
+    /**
+     * fonction getRemove
+     * Suppression d'un article dans le panier
+     * @param id : ID de l'article à supprimer du panier
+     */
     public function getRemove($id) {
         $oldCart = Session::has('cart') ? Session::get('cart') : null;
         $cart = new Cart($oldCart);
@@ -70,6 +94,10 @@ class ProductController extends Controller
         return redirect()->route('product.cartview');     
     }
 
+    /**
+     * Fonction getPaycard
+     * @return vue paiement
+     */
     public function getPaycard() {
         if (!Session::has('cart')) {
             return view('shop.cartview');
@@ -96,7 +124,7 @@ class ProductController extends Controller
         $cart = new Cart($oldCart);
         
         /* clé test pour stripe */
-        \Stripe\Stripe::setApiKey("sk_test_********************");
+        \Stripe\Stripe::setApiKey("sk_test_KKgqxlUF1us5r5n5kgz1o25d");
         try {
             /* construction de la charge pour le test */
             $charge = \Stripe\Charge::create(array(
