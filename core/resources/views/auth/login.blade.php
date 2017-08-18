@@ -58,7 +58,7 @@
                                     Connection
                                 </button>
                                 <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    Forgot Your Password?
+                                    Mot de passe perdu ?
                                 </a>
                             </div>
                         </div>
