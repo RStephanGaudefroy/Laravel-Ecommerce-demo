@@ -85,12 +85,12 @@
         float: right;
     }
 
-/* A000 - Gestion erreur */
+/* A - Gestion erreur */
 .help-block {
     color: red;
 }
 
-/* A0 - Header */
+/* B - Header */
     #header {
         position: fixed;
         width:100%;
@@ -136,7 +136,7 @@
     #header .navbar-left > li > a > i:hover {
         color: #337ab7;    
     }
-/* A-000 LOGIN, REGISTER, FORGOT PASSWORD */
+/* C - LOGIN, REGISTER, FORGOT PASSWORD */
     #login .panel-heading,
     #register .panel-heading,
     #forgotPassword .panel-heading,
@@ -155,7 +155,7 @@
         background-color: #bfbfbf;
     }
 
-/* A - Index */
+/* D - Index */
     #index .thumbnail {
         max-height:480px;
         height:435px;
@@ -200,7 +200,7 @@
         color:#337ab7;
     }
 
-/* B - CartView */
+/* E - CartView */
     #cartview .bold {
         font-weight:bold;  
     }
@@ -236,7 +236,7 @@
         margin-left: -7em;
     }
 
-/* C - Profil */
+/* F - Profil */
     #profil .panel {
         background-color: rgba(230,230,230,0);
         border: 1.5px solid #bfbfbf;
@@ -261,7 +261,7 @@
         border-color: rgba(230,230,230,0);
     }
 
-/* D - page contact */
+/* G - page contact */
     #formContact #messageContact,
     #formContact #mailContact,
     #formContact #dateJour {
@@ -283,7 +283,7 @@
         padding: 5px 20px 5px 20px;
     }
 
-/* E - Gestion des articles */
+/* H - Gestion des articles */
     table {
         width: 100%;
     }
@@ -319,9 +319,7 @@
         padding: 5px 10px 5px 10px;
     }
 
-/**
- * F - Formulaire create et update 
- */
+/* I - Formulaire create et update  */
     #formUpdate input, 
     #formUpdate textarea {
         color: #000;
@@ -329,7 +327,7 @@
   
  
 /**
- * Gestion de la responsive
+ * J - Gestion de la responsive
  */
 @media screen and (min-width: 200px) and (max-width: 430px) {
     /* A - Header */
@@ -354,7 +352,7 @@
 }
 
 @media screen and (min-width: 430px) and (max-width: 767px) {
-    /* Header */
+    /* A - Header */
     #header .navbar-nav {
         margin: 0 0;
     }
@@ -363,7 +361,7 @@
         margin-top: -3px;
     }
     
-    /* Index */
+    /* B - Index */
     #index .thumbnail {
         height:370px;
     }
@@ -410,7 +408,7 @@
 }
 
 /**
- * Responsive du tableau de la vue gestion article
+ * K - Responsive du tableau de la vue gestion article
  * Traitement à part car responsive commence à <= à 768px 
  */
 @media (max-width: 48em) {
