@@ -9,6 +9,9 @@ use Product;
 
 class UserController extends Controller
 {
+    /**
+     * Retourne la liste des achats de l'utilisateur en cours
+     */
     public function getProfile() {
         $orders = Auth::user()->orders;
         $orders = $orders->sortByDesc("created_at");
@@ -16,9 +19,18 @@ class UserController extends Controller
             $order->cart = unserialize($order->cart);
             return $order;
         });
-        return view('user.profile', ['orders' => $orders]);
+        if (count($orders) > 0) {
+            return view('user.profile', ['orders' => $orders]);
+        }  else {
+            Session::flash('info', "Vous n'avez pas d'achat enregistré");
+            return redirect()->route('product.index');
+        }
+        
     }
 
+    /**
+     * Deconnection de l'utilisateur 
+     */
     public function getLogout() {
         Auth::logout();
         Session::forget('cart');
