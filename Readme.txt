@@ -1,6 +1,6 @@
 Laravel E-commerce démo :
 
-Simple démonstration application e-commerce comprenant : 
+Simple démonstration application e-commerce comprenant pour l'instant : 
   - système d'authentification
   - gestion du panier
   - système de paiement version test STRIPE
