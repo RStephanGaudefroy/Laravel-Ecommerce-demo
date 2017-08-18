@@ -7,3 +7,4 @@ Simple démonstration application e-commerce comprenant pour l'instant :
   - système de paiement version test STRIPE -> Nécessite de s'inscrire pour obtenir les clés test
   - gestion simple des article type CRUD réservé à l'administrateur 
   - page contact
+  - export de la base de données -> db692882236.sql
