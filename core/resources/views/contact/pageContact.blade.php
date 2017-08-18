@@ -15,13 +15,13 @@
         <div class="row">
         <div class="col-md-8 col-sm-10 col-xs-12">
             <div class="form-group">
-                <label id="dateJour"></label>
+                <label id="dateJour" class="form-control"></label>
             </div>
         </div>
         <div class="col-md-8 col-sm-10 col-xs-12">
             <div class="form-group">
                 <label for="mailContact"></label>
-                <input type="email" class="form-control" id="mailContact" name="mailContact" value="{{ Auth::user()->email }}">
+                <input type="email" class="form-control" id="mailContact" name="mailContact" value="votre Email : {{ Auth::user()->email }}"/>
             </div>
         </div>
         <div class="col-md-8 col-sm-10 col-xs-12">
@@ -29,7 +29,7 @@
                 <label for="messageContact"></label>
                 <textarea class="form-control" id="messageContact" rows="8" name="messageContact" placeholder="Votre message"></textarea>
             </div>
-            <input type="submit" class="btn btn-success bouton">
+            <input type="submit" class="btn btn-success bouton"/>
         </div>
         </div>
                 
