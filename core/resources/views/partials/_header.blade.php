@@ -43,7 +43,7 @@
                                 @if (Auth::user()->profil == '1')
                                     <li><a href="{{route('control.gestionArticle') }}">Gest. Article</a></li>
                                 @endif
-                                <li><a href="{{ route('user.profile') }}">Mon profil</a></li>
+                                <li><a href="{{ route('user.profile') }}">Mes achats</a></li>
                                 <li role="separator" class="divider"></li>
                                 <li><a href="{{route('contact.pageContact') }}">Contact</a></li>  
                                 <li role="separator" class="divider"></li>
