@@ -8,3 +8,5 @@ Simple démonstration application e-commerce comprenant pour l'instant :
   - gestion simple des article type CRUD réservé à l'administrateur 
   - page contact
   - export de la base de données -> db692882236.sql
+
+Les tests pour la responsive ont été éffectué avec Screenfly sur quirktools.com ainsi que les outils de développement de Google Chrome et Opéra et firefox Nightly.
