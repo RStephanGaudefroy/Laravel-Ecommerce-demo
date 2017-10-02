@@ -28,7 +28,7 @@
                 @foreach($productChunk as $product)
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="thumbnail">
-                            <img src="{{URL::to('image/', $product->image )}}" alt="..." class="img-responsive">
+                            <img src="{{URL::to('image/', $product->image )}}" alt="Images informatiques..." class="img-responsive">
                             <div class="caption">
                                 <h3 class="productName">{{ $product->product_name }}</h3>
                                 <p class="description">{{ $product->description }}</p>
